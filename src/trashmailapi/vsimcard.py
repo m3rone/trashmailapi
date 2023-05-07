@@ -56,16 +56,3 @@ class Vsimcard:
                 mail.content = retrievedcontent
                 self.contentbox.append(mail.content)
                 return mail.content
-
-
-user = Vsimcard("emailaddress")
-
-user.get_emails() # fetch emails except for content
-
-mail = None
-
-for i in user.inbox:
-    if "verify" in i.subject:
-        mail = user.get_content(i.id) # gets the email body/content using mail ID's
-
-print(mail)
