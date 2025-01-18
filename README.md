@@ -13,7 +13,7 @@ Installation:
 Examples:
 
 - Vsimcard:
-```
+```py
 from trashmailapi.vsimcard import Vsimcard
 
 user = Vsimcard("emailaddress")
